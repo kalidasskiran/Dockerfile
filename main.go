@@ -22,7 +22,7 @@ func init() {
 
 	ctx = context.Background()
 	client, err = mongo.Connect(ctx,
-		options.Client().ApplyURI("mongodb://admin:password@localhost:27017/test?authSource=admin"))
+		options.Client().ApplyURI("mongodb+srv://kirankalidass:kalidasskiran@cluster0.xe3j2.mongodb.net/test"))
 	if err = client.Ping(context.TODO(),
 		readpref.Primary()); err != nil {
 		log.Fatal(err)
